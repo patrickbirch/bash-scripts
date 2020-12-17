@@ -2,6 +2,9 @@
 
 set -e
 
+# sample
+# create-ps-dir.sh 8.0 7777
+
 shortprod='ps-'$1
 prodname='percona-server'
 basePS="ps-"$1

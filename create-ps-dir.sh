@@ -2,7 +2,6 @@
 
 set -e
 
-# prodvers="5.7"
 shortprod='ps-'$1
 prodname='percona-server'
 basePS="ps-"$1
@@ -44,7 +43,5 @@ git config master.merge refs/heads/master
 git remote add pb_remote git@github.com:patrickbirch/percona-server.git
 
 git checkout -b $newJira
-
-#git checkout -b $newJira $(git rev-parse $(git rev-list --topo-order --first-parent origin/5.7 ^e12228ecb12 | tail -1)^)
 
 pwd
